@@ -23,5 +23,25 @@ namespace myFirstQuarterTest
             }
             return count;
         }
+
+        static void FillResultArray (string[] arrayInput, string[] resultArray, int symbolsCount)
+        {
+            int len = arrayInput.Length;
+            int index = 0;
+            int count = 0;
+
+            while (index < len)
+            {
+                if (arrayInput[index].Length <= symbolsCount)
+                {
+                    resultArray[count] = arrayInput[index];
+                    count += 1;
+                }
+
+                index += 1;
+            
+            }
+        }
+    
     }
 }
