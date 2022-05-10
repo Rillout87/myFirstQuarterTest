@@ -13,7 +13,7 @@ namespace myFirstQuarterTest
             
             string[] resultArray = new string[CountResultArray(arrayInput, symbolsCount)];
 
-            FillResultArray(arrayInput, resultArray, 3);
+            FillResultArray(arrayInput, resultArray, symbolsCount);
             
             Console.WriteLine(String.Join(", ", resultArray));
 
