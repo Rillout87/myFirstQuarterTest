@@ -10,7 +10,12 @@ namespace myFirstQuarterTest
         {
             string[] arrayInput = {"hello", "2", "world", ":-)"};
             int symbolsCount = 3;
+            
             string[] resultArray = new string[CountResultArray(arrayInput, symbolsCount)];
+
+            FillResultArray(arrayInput, resultArray, 3);
+            
+            Console.WriteLine(String.Join(", ", resultArray));
 
         }
     
